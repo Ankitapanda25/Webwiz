@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Induction Form</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="navbar">
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact Us</a>
+	</div>
+	
+	<form name="inductionForm" onsubmit="return validateForm()" method="post">
+		<h2>Induction Form</h2>
+		
+		<label for="fullName">Full Name</label>
+		<input type="text" id="fullName" name="fullName" placeholder="Enter your full name...">
+		
+		<label for="gender">Gender</label>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<br><br>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email...">
+		
+		<label for="instituteEmail">Institute Email</label>
+		<input type="email" id="instituteEmail" name="instituteEmail" placeholder="Enter your institute email...">
+		
+		<label for="rollNumber">Roll Number</label>
+		<input type="text"
+	id="rollNumber" name="rollNumber" placeholder="Enter your roll number...">
+	
+	<label for="phoneNumber">Phone Number</label>
+	<input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number...">
+	
+	<label for="branch">Branch</label>
+	<select id="branch" name="branch">
+		<option value="cse">CSE</option>
+		<option value="ece">ECE</option>
+		<option value="mech">Mechanical</option>
+		<option value="civil">Civil</option>
+	</select>
+	
+	<label for="fieldOfInterest">Field of Interest</label>
+    <br><br>
+	<input type="checkbox" id="tech" name="fieldOfInterest" value="tech">
+	<label for="tech">Tech</label>
+	<input type="checkbox" id="design" name="fieldOfInterest" value="design">
+	<label for="design">Design</label>
+	<input type="checkbox" id="management" name="fieldOfInterest" value="management">
+	<label for="management">Management</label>
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
+<br>
+<div class="footer">
+	<p>&copy; 2023 Webwiz</p>
+</div>
+
+
+   <script src="script.js"></script> 
+</body>
+</html>
